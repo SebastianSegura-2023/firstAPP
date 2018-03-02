@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -20,16 +19,5 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
-  }
-
-  constructor(public alerCtrl: AlertController) { }
-
-  doAlert() {
-    let alert = this.alerCtrl.create({
-      title: 'New Friend!',
-      message: 'Your friend, Obi wan Kenobi, just approved your friend request!',
-      buttons: ['Ok']
-    });
-    alert.present()
   }
 }
